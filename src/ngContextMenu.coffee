@@ -62,7 +62,7 @@ angular.module 'ngContextMenu', []
           # dropmenu.removeClass('open')
           hideMenu()
           if scope.onMenuClose
-            scope.onMenuClose()
+            scope.onMenuClose(event)
 
       scope.clickItem = (item, event) ->
         if scope.clickMenu
